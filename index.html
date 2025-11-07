@@ -192,9 +192,30 @@ rel="stylesheet"/>
                 </div>
                 
             </div>
+            <div class="popup-img">
+                <span>&times;</span>
+                <img src="images/Print media copy.png" alt="">
 
+            </div>
+            
     </div>
+    
    </section>
+   <script>
+    document.querySelectorAll('.designs-images img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup-img').style.display = 'block';
+            document.querySelector('.popup-img img').src = image.getAttribute('src');
+        }
+    });
+    
+    document.querySelector('.popup-img span').onclick = () =>{
+        document.querySelector('.popup-img').style.display = 'none';
+    }
+</script>
+   
+    
+
 
 <!-- About -->
 
@@ -203,8 +224,9 @@ rel="stylesheet"/>
         <h2>About Me</h2>
         <div class="about">
         <div class="about-text">
-            <p>I am a marketing professional with a Master’s in Marketing from the University of Denver, specializing in data-driven strategies, SEO, SEM, content creation, and web design (CSS/HTML). Proficient in tools like Canva, HubSpot, Adobe Creative Suite, WordPress, and Mailchimp, I’ve applied these skills in various projects mentioned above. I also have experience in co-creating a niche e-commerce brand, demonstrating my ability to craft impactful marketing strategies and storytelling. Currently, I am seeking to leverage my digital marketing, social media management, and data visualization skills to drive innovative, measurable campaigns for a forward-thinking organization.</p>
-        <a href="images/New Resume.pdf" target="_blank" class="btn">My Resume</a>
+            <p>I’m a marketing professional with a Master’s in Marketing from the University of Denver, specializing in digital strategy, SEO/SEM, content creation, and web design. Skilled in tools like HubSpot, Canva, Adobe Creative Suite, and Power BI, I blend creativity with analytics to deliver measurable results. I’ve built automated marketing funnels, launched multi-channel campaigns, and designed responsive web assets that enhance brand visibility and engagement.
+                Passionate about storytelling and innovation, I aim to craft data-driven marketing experiences that inspire action and drive growth for forward-thinking organizations.</p>
+        <a href="images/Dubai Resume.pdf" target="_blank" class="btn">My Resume</a>
         
     
         </div>

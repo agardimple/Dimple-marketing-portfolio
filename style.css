@@ -328,15 +328,12 @@ nav a {
     margin-top: var(--gutter-xx-small);
 }
 
-/* adjust the px below for the project image size */
 
 .project-box-img {
     width: 3000px;
     
 
 }
-
-/* adjust the px below for the project image size */
 
 @media(max-width: 1350px) {
     .project-box-img {
@@ -475,6 +472,47 @@ nav a {
 .img-wrapper:hover .content {
     opacity: 1;
 }
+
+
+.row .popup-img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.row .popup-img span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder; 
+    color: var(--white);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.row .popup-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .row .popup-img img{
+        width: 95%;
+
+    }
+}
+
 
 /* ---------- About ------------------- */
 

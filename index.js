@@ -13,3 +13,4 @@ const observer = new IntersectionObserver((enteries, observer) => {
 });
 
 observer.observe(observertarget);
+
